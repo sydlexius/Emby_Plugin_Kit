@@ -1,0 +1,24 @@
+# .NET build output
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+*.user
+.vs/
+
+# Emby reference assemblies fetched by the tool (never committed)
+embylibs/
+
+# Node (for any JS-pipeline templates/tests)
+node_modules/
+
+# Local environment / secrets
+.env
+.env.local
+
+# Docs site build
+site/
+
+# OS cruft
+.DS_Store
+Thumbs.db
