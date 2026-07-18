@@ -1,0 +1,19 @@
+version: 2
+updates:
+  # No package manifests exist in this repo yet, so github-actions is the only
+  # ecosystem with anything to update. Add further ecosystems alongside the code.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    commit-message:
+      prefix: "ci"
+    open-pull-requests-limit: 5
+    labels:
+      - dependencies
+      - github-actions
+    groups:
+      actions-all:
+        patterns:
+          - "*"
